@@ -35,6 +35,18 @@ public class BinarySearch {
         }else{
             return -1;
         }
+
+
+
+        // public static int peakIndexInMountainArray(int[] arr){
+        //     int i=0;
+        //     while(arr[i]<arr[i+1]){
+        //         i++;
+        //     }
+
+        //     return arr[i+1];
+        // }
+        
     }
     
 
