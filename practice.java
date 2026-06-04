@@ -42,5 +42,22 @@ public class practice {
     //     return x*n;
     // }
 
+    public static int stockBuySell(int[] arr, int n) {
+        int maxProfit=0;
+        for(int i=1;i<n;i++){
+            int sp=arr[i]-arr[i-1];
+            maxProfit=Math.max(sp+maxProfit,maxProfit);
+        }
+        return maxProfit;
+       
+    }
+    public static void main(String[] args) {
+        int[] arr={3,8,1,4,6,2};
+        System.out.println(stockBuySell(arr,6));
+        int[] arr2={10,7,5,8,11,9};
+        System.out.println(stockBuySell(arr2, 6));
+        
+    }
+
 
 }
